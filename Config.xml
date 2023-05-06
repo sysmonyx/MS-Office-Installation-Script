@@ -1,0 +1,110 @@
+<!--############################################################################################################################
+#    /$$$$$$                                                                                                                    
+#   /$$__  $$                                                                                                                   
+#  | $$  \__/ /$$   /$$  /$$$$$$$ /$$$$$$/$$$$   /$$$$$$  /$$$$$$$  /$$   /$$ /$$   /$$         # Author:   Soham Ray [Sysmonyx]
+#  |  $$$$$$ | $$  | $$ /$$_____/| $$_  $$_  $$ /$$__  $$| $$__  $$| $$  | $$|  $$ /$$/                                         
+#   \____  $$| $$  | $$|  $$$$$$ | $$ \ $$ \ $$| $$  \ $$| $$  \ $$| $$  | $$ \  $$$$/          # Website:  https://sysmonyx.com
+#   /$$  \ $$| $$  | $$ \____  $$| $$ | $$ | $$| $$  | $$| $$  | $$| $$  | $$  >$$  $$                                          
+#  |  $$$$$$/|  $$$$$$$ /$$$$$$$/| $$ | $$ | $$|  $$$$$$/| $$  | $$|  $$$$$$$ /$$/\  $$         # Email:    contact@sysmonyx.com
+#   \______/  \____  $$|_______/ |__/ |__/ |__/ \______/ |__/  |__/ \____  $$|__/  \__/                                         
+#             /$$  | $$                                             /$$  | $$                                                   
+#            |  $$$$$$/                                            |  $$$$$$/                                                   
+#             \______/                                              \______/                                                    
+################################################################################################################################
+#   Description:    Configuration file for Office Deployment Tool (ODT).
+#                   Installed Apps : Excel, OneNote, Outlook, Powerpoint & Word.
+#                   Mostly Privacy & Security focused tweaks with some UI tweaks.
+#                   Replace PIDKEY with your personal MAK key.
+#                   Replace "Product ID" with the specific Product ID. Refer to MS-Documentation for proper Product IDs.
+#                   Created using Office Deployment Tool Configurator.
+#
+#   Last Updated:   07.05.2023
+#############################################################################################################################-->
+<Configuration>
+    <Add OfficeClientEdition="64" Channel="Current">
+        <Product ID="ProPlus2021Volume" PIDKEY="#####-#####-#####-#####-#####">
+            <Language ID="en-us" />
+            <ExcludeApp ID="Access" />
+            <ExcludeApp ID="Lync" />
+            <ExcludeApp ID="OneDrive" />
+            <ExcludeApp ID="Publisher" />
+            <ExcludeApp ID="Teams" />
+        </Product>
+    </Add>
+    <Property Name="SharedComputerLicensing" Value="0" />
+    <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
+    <Property Name="DeviceBasedLicensing" Value="0" />
+    <Property Name="SCLCacheOverride" Value="0" />
+    <Property Name="AUTOACTIVATE" Value="1" />
+    <Display Level="Full" AcceptEULA="TRUE" />
+    <Updates Enabled="TRUE" />
+    <AppSettings>
+        <User Key="software\microsoft\office\16.0\common\sharepointintegration" Name="hidelearnmorelink" Value="1" Type="REG_DWORD" App="office16" Id="L_HideTheLearnMoreAboutSharePointHyperlink" />
+        <User Key="software\microsoft\office\16.0\sharepointtracking" Name="automaticdiscovery" Value="Off" Type="REG_SZ" App="office16" Id="L_AutomaticDiscovery" />
+        <User Key="software\microsoft\office\16.0\common\autocorrect" Name="correcttwoinitialcapitals" Value="1" Type="REG_DWORD" App="office16" Id="L_CorrectTWoINitialCApitals" />
+        <User Key="software\microsoft\office\16.0\common\autocorrect" Name="capitalizesentence" Value="1" Type="REG_DWORD" App="office16" Id="L_Capitalizefirstletterofsentence" />
+        <User Key="software\microsoft\office\16.0\common\autocorrect" Name="capitalizenamesofdays" Value="1" Type="REG_DWORD" App="office16" Id="L_Capitalizenamesofdays" />
+        <User Key="software\microsoft\office\16.0\common\autocorrect" Name="togglecapslock" Value="1" Type="REG_DWORD" App="office16" Id="L_CorrectaccidentaluseofcAPSLOCKkey" />
+        <User Key="software\microsoft\office\16.0\common\autocorrect" Name="replacetext" Value="1" Type="REG_DWORD" App="office16" Id="L_Replacetextasyoutype" />
+        <User Key="software\microsoft\office\16.0\common\internet" Name="opendirectlyinapp" Value="1" Type="REG_DWORD" App="office16" Id="L_OpenOfficeDocumentDirectlyInOfficeApplication" />
+        <User Key="software\microsoft\office\16.0\common\internet" Name="allowpng" Value="1" Type="REG_DWORD" App="office16" Id="L_AllowPNGasanoutputformat" />
+        <User Key="software\microsoft\office\16.0\common" Name="sendcustomerdata" Value="0" Type="REG_DWORD" App="office16" Id="L_Sendcustomerdata" />
+        <User Key="software\microsoft\office\16.0\common\internet" Name="useonlinecontent" Value="0" Type="REG_DWORD" App="office16" Id="L_Onlinecontentoptions" />
+        <User Key="software\microsoft\office\16.0\common\internet" Name="useconversionservices" Value="0" Type="REG_DWORD" App="office16" Id="L_ConversionServicesoptions" />
+        <User Key="software\microsoft\office\16.0\common\internet" Name="serviceleveloptions" Value="0" Type="REG_DWORD" App="office16" Id="L_ServiceLevelOptions" />
+        <User Key="software\microsoft\shared tools\proofing tools\1.0\office" Name="flagrepeatedword" Value="1" Type="REG_DWORD" App="office16" Id="L_FlagRepeatedWords" />
+        <User Key="software\microsoft\shared tools\proofing tools\1.0\office" Name="ignoreuppercase" Value="1" Type="REG_DWORD" App="office16" Id="L_IgnorewordsinUPPERCASE" />
+        <User Key="software\microsoft\shared tools\proofing tools\1.0\office" Name="ignorewordswithnumbers" Value="1" Type="REG_DWORD" App="office16" Id="L_Ignorewordswithnumbers" />
+        <User Key="software\microsoft\shared tools\proofing tools\1.0\office" Name="ignoreinternetfileaddresses" Value="1" Type="REG_DWORD" App="office16" Id="L_IgnoreInternetandfileaddresses" />
+        <User Key="software\microsoft\office\16.0\common\ptwatson" Name="ptwoptin" Value="0" Type="REG_DWORD" App="office16" Id="L_ImproveProofingTools" />
+        <User Key="software\microsoft\office\16.0\common\general" Name="shownfirstrunoptin" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOptinWizard" />
+        <User Key="software\microsoft\office\16.0\common" Name="qmenable" Value="0" Type="REG_DWORD" App="office16" Id="L_EnableCustomerExperienceImprovementProgram" />
+        <User Key="software\microsoft\office\16.0\common" Name="updatereliabilitydata" Value="0" Type="REG_DWORD" App="office16" Id="L_UpdateReliabilityPolicy" />
+        <User Key="software\microsoft\office\16.0\common\security\applicationguard" Name="disablecameraandmicrophone" Value="1" Type="REG_DWORD" App="office16" Id="L_TurnOffCameraAndMicrophoneInApplicationGuard" />
+        <User Key="software\microsoft\office\16.0\common\services\fax" Name="nofax" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableFaxOverInternetfeature" />
+        <User Key="software\microsoft\office\16.0\common\services\fax" Name="disallowcustomcoversheet" Value="1" Type="REG_DWORD" App="office16" Id="L_Disallowcustomcoversheet" />
+        <User Key="software\microsoft\office\16.0\common\shipasserts" Name="disableshipasserts" Value="1" Type="REG_DWORD" App="office16" Id="L_StopReportingNonCriticalErrors" />
+        <User Key="software\microsoft\office\16.0\common\alerts" Name="noalertreporting" Value="1" Type="REG_DWORD" App="office16" Id="L_StopReportingErrorMessages" />
+        <User Key="software\microsoft\office\16.0\common\fixedformat" Name="useiso19005-1" Value="1" Type="REG_DWORD" App="office16" Id="L_EnforcePDFcompliancewithISO190051PDFA" />
+        <User Key="software\microsoft\office\16.0\common\fileio" Name="disablelongtermcaching" Value="1" Type="REG_DWORD" App="office16" Id="L_DeleteFilesFromOfficeDocumentCache" />
+        <User Key="software\microsoft\office\16.0\common\roaming" Name="roamingsettingsdisabled" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOfficeUserRoamingSettings" />
+        <User Key="software\microsoft\office\16.0\osm" Name="enableupload" Value="0" Type="REG_DWORD" App="office16" Id="L_OfficeInventoryAgentUpload" />
+        <User Key="software\microsoft\office\16.0\osm" Name="enablefileobfuscation" Value="1" Type="REG_DWORD" App="office16" Id="L_OfficeInventoryAgentFilemetadataObfuscation" />
+        <User Key="software\microsoft\office\16.0\osm" Name="enablelogging" Value="0" Type="REG_DWORD" App="office16" Id="L_EnableLogging" />
+        <User Key="software\microsoft\office\16.0\common\feedback" Name="surveyenabled" Value="0" Type="REG_DWORD" App="office16" Id="L_SendSurvey" />
+        <User Key="software\microsoft\office\16.0\common\feedback" Name="enabled" Value="0" Type="REG_DWORD" App="office16" Id="L_SendFeedback" />
+        <User Key="software\microsoft\office\16.0\common\feedback" Name="includescreenshot" Value="0" Type="REG_DWORD" App="office16" Id="L_Screenshot" />
+        <User Key="software\microsoft\office\16.0\common\feedback" Name="includeemail" Value="0" Type="REG_DWORD" App="office16" Id="L_EmailCollection" />
+        <User Key="software\microsoft\office\16.0\common\feedback" Name="feedbackincludelog" Value="0" Type="REG_DWORD" App="office16" Id="L_LogCollection" />
+        <User Key="software\microsoft\office\16.0\common\targetedmessagingservice" Name="disabletargetedmessaging" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableTargetedMessaging" />
+        <User Key="software\microsoft\office\16.0\common\helpviewer" Name="enablefederatedhelpsearch" Value="0" Type="REG_DWORD" App="office16" Id="L_federatedSearchForHelp" />
+        <User Key="software\microsoft\office\16.0\firstrun" Name="disablemovie" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableMovie" />
+        <User Key="software\microsoft\office\16.0\firstrun" Name="bootedrtm" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOfficeFirstrun" />
+        <User Key="software\microsoft\office\16.0\excel" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationExcel" />
+        <User Key="software\microsoft\office\16.0\powerpoint" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationPowerPoint" />
+        <User Key="software\microsoft\office\16.0\visio" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationVisio" />
+        <User Key="software\microsoft\office\16.0\outlook" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationOutlook" />
+        <User Key="software\microsoft\office\16.0\onenote" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationOneNote" />
+        <User Key="software\microsoft\office\16.0\word" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationWord" />
+        <User Key="software\microsoft\office\16.0\common" Name="default ui theme" Value="4" Type="REG_DWORD" App="office16" Id="L_DefaultUIThemeUser" />
+        <User Key="software\microsoft\office\16.0\common\options" Name="officeenableautoalttext" Value="0" Type="REG_DWORD" App="office16" Id="L_OfficeEnableAutoAltText" />
+        <User Key="software\microsoft\office\16.0\excel\options" Name="livepreview" Value="1" Type="REG_DWORD" App="excel16" Id="L_DisableLivePreview" />
+        <User Key="software\microsoft\office\16.0\excel\options" Name="defaultformat" Value="51" Type="REG_DWORD" App="excel16" Id="L_SaveExcelfilesas" />
+        <User Key="software\microsoft\office\16.0\outlook\today" Name="disable" Value="1" Type="REG_DWORD" App="outlk16" Id="L_OutlookTodayavailability" />
+        <User Key="software\microsoft\office\outlook\socialconnector" Name="runosc" Value="0" Type="REG_DWORD" App="outlk16" Id="L_TurnOffOutlookSocialConnector" />
+        <User Key="software\microsoft\office\outlook\socialconnector" Name="unmanagedinfobars" Value="1" Type="REG_DWORD" App="outlk16" Id="L_DoNotShowSocialNetworkInfoBars" />
+        <User Key="software\microsoft\office\outlook\socialconnector" Name="disablesocialnetworkconnectivity" Value="1" Type="REG_DWORD" App="outlk16" Id="L_PreventSocialNetworkConnectivity" />
+        <User Key="software\microsoft\office\outlook\socialconnector" Name="ondemandactivitysync" Value="0" Type="REG_DWORD" App="outlk16" Id="L_DoNotAllowOnDemandActivitySynchronization" />
+        <User Key="software\microsoft\office\16.0\powerpoint\options" Name="livepreview" Value="1" Type="REG_DWORD" App="ppt16" Id="L_DisableGalleryPreviews" />
+        <User Key="software\microsoft\office\16.0\powerpoint\options" Name="defaultformat" Value="27" Type="REG_DWORD" App="ppt16" Id="L_SavePowerPointfilesas" />
+        <User Key="software\microsoft\office\16.0\powerpoint\options" Name="verticalruler" Value="1" Type="REG_DWORD" App="ppt16" Id="L_Verticalruler" />
+        <User Key="software\microsoft\office\16.0\word\options" Name="livepreview" Value="1" Type="REG_DWORD" App="word16" Id="L_EnableLivePreview" />
+        <User Key="software\microsoft\office\16.0\word\options\assist" Name="ftwoinitialcaps_24_1" Value="1" Type="REG_DWORD" App="word16" Id="L_CorrectTWoINitialCApitals" />
+        <User Key="software\microsoft\office\16.0\word\options\assist" Name="finitialcap_32_1" Value="1" Type="REG_DWORD" App="word16" Id="L_Capitalizefirstletterofsentence" />
+        <User Key="software\microsoft\office\16.0\word\options\assist" Name="fcapdaynames_48_1" Value="1" Type="REG_DWORD" App="word16" Id="L_Capitalizenamesofdays" />
+        <User Key="software\microsoft\office\16.0\word\options\assist" Name="fcapslock_40_1" Value="1" Type="REG_DWORD" App="word16" Id="L_CorrectaccidentalusageofcAPSLOCKkey" />
+        <User Key="software\microsoft\office\16.0\word\options\assist" Name="fcorrecttyping_16_1" Value="1" Type="REG_DWORD" App="word16" Id="L_Replacetextasyoutype" />
+        <User Key="software\microsoft\office\16.0\word\options" Name="defaultformat" Value="" Type="REG_SZ" App="word16" Id="L_SaveWordfilesas" />
+    </AppSettings>
+</Configuration>
+<!--#########################################################################################################################-->
