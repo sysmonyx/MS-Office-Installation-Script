@@ -13,13 +13,13 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::  Description:    This script downloads & installs Microsoft Office Suite using the Office Deployement Tool (ODT).
 ::
-::  Last Updated:   08.10.2023
+::  Last Updated:   07.11.2023
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 @echo off
 color 0E
 title Microsoft Office Installer
 
-%~dp0
+cd %~dp0
 
 :: Download Office Installation files from Office CDN.
 echo Downloading MS-Office Installation Files . . . .
