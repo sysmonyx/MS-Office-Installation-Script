@@ -18,14 +18,14 @@
 #                   Replace "Product ID" with the specific Product ID. Refer to MS-Documentation for proper Product IDs.
 #                   Replace "Channel" with the appropriate update channel for your specified product.
 #                   The 'Current' channel works best for most product SKUs.
-#                   The 'ProPlus2021Volume' which is the Office 2021 LTSC Pro Plus, only accepts 'PerpetualVL2021' channel.
+#                   The 'ProPlus2021Volume' or 'ProPlus2021Retail' which are the Office 2021 LTSC Pro Plus, only accepts 'PerpetualVL2021' channel.
 #                   Created using Office Deployment Tool Configurator.
 #
 #   Last Updated:   07.11.2023
 #############################################################################################################################-->
 <Configuration>
     <Add OfficeClientEdition="64" Channel="PerpetualVL2021">
-        <Product ID="ProPlus2021Volume">
+        <Product ID="ProPlus2021Retail">
             <Language ID="en-us" />
             <ExcludeApp ID="Access" />
             <ExcludeApp ID="Lync" />
