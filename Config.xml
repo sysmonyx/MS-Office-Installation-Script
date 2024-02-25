@@ -25,7 +25,7 @@
 #############################################################################################################################-->
 <Configuration>
     <Add OfficeClientEdition="64" Channel="PerpetualVL2021">
-        <Product ID="ProPlus2021Retail">
+        <Product ID="ProPlus2021Volume">
             <Language ID="en-us" />
             <ExcludeApp ID="Access" />
             <ExcludeApp ID="Lync" />
