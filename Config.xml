@@ -21,7 +21,7 @@
 #                   The 'ProPlus2021Volume' or 'ProPlus2021Retail' which are the Office 2021 LTSC Pro Plus, only accepts 'PerpetualVL2021' channel.
 #                   Created using Office Deployment Tool Configurator.
 #
-#   Last Updated:   07.11.2023
+#   Last Updated:   24.03.2023
 #############################################################################################################################-->
 <Configuration>
     <Add OfficeClientEdition="64" Channel="PerpetualVL2021">
@@ -40,7 +40,7 @@
     <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
     <Property Name="DeviceBasedLicensing" Value="0" />
     <Property Name="SCLCacheOverride" Value="0" />
-    <Property Name="AUTOACTIVATE" Value="1" />
+    <Property Name="AUTOACTIVATE" Value="0" />
     <Display Level="Full" AcceptEULA="TRUE" />
     <Updates Enabled="TRUE" />
     <AppSettings>
