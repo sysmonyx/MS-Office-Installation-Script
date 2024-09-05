@@ -12,20 +12,22 @@
 #             \______/                                              \______/                                                    
 ################################################################################################################################
 #   Description:    Configuration file for Office Deployment Tool (ODT).
-#                   Installed Apps : Excel, OneNote, Outlook, Powerpoint & Word.
+#                   Installed Apps : Excel, Powerpoint & Word.
 #                   Mostly Privacy & Security focused tweaks with some UI tweaks.
 #                   If you have a MAK Key, add [PIDKEY="#####-#####-#####-#####-#####"] after [Product ID=].
 #                   Replace "Product ID" with the specific Product ID. Refer to MS-Documentation for proper Product IDs.
 #                   Replace "Channel" with the appropriate update channel for your specified product.
 #                   The 'Current' channel works best for most product SKUs.
-#                   The 'ProPlus2021Volume' or 'ProPlus2021Retail' which are the Office 2021 LTSC Pro Plus, only accepts 'PerpetualVL2021' channel.
+#                   The 'ProPlus2024Volume' or 'ProPlus2024Retail' which are the Office 2024 LTSC Pro Plus, only accepts 'PerpetualVL2024' channel.
 #                   Created using Office Deployment Tool Configurator.
 #
-#   Last Updated:   24.03.2023
+#                   ODT Version : 16.0.17830.20162 [12.08.2024]
+#
+#   Last Updated:   05.09.2024
 #############################################################################################################################-->
 <Configuration>
-    <Add OfficeClientEdition="64" Channel="PerpetualVL2021">
-        <Product ID="ProPlus2021Volume">
+    <Add OfficeClientEdition="64" Channel="PerpetualVL2024">
+        <Product ID="ProPlus2024Volume">
             <Language ID="en-us" />
             <ExcludeApp ID="Access" />
             <ExcludeApp ID="Lync" />
